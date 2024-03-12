@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EasterGame</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="display: flex; justify-content: center">
+    <div
+      id="menu"
+      style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      "
+    >
+      <h3>Rabbit Survivor</h3>
+      <button id="playButton">Play</button>
+    </div>
+    <div
+      id="legend"
+      style="
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      "
+    ></div>
+    <div id="aCanvas" style="display: none; justify-content: center">
+      <canvas
+        id="myCanvas"
+        width="1000"
+        height="600"
+        style="border: 1px solid #000000"
+      ></canvas>
+      <button id="ability1">
+        CLEAR THE EGGS! (-10 points)
+      </button>
+      <button id="ability2">
+        Magnet! (-15 points)
+      </button>
+    </div>
+
+    <div
+      id="end_Game"
+      style="
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      "
+    >
+      <h3>You Lost</h3>
+      <p id="score">Your Score: 0</p>
+      <img src="img/SadHampter.png" alt="hampter">
+    </div>
+  </body>
+</html>
